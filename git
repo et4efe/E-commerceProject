@@ -1,0 +1,12 @@
+git init
+git add .
+git commit -m "Initial commit: FastAPI ML model for E-commerce"
+git branch -M main
+git remote add origin https://github.com/et4efe/E-commerceProject.git
+git push -u origin main
+git config --global user.email "efetezcan0405@example.com"
+git config --global user.name "et4efe"
+
+git add .
+git commit -m "Initial commit: FastAPI ML model for E-commerce"
+git push -u origin main

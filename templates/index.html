@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Harcama Tahmini</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1>E-Commerce Harcama Tahmini</h1>
+            <p class="subtitle">Musteri davranislarina gore tahmini harcama tutarini hesapla.</p>
+
+            <form id="prediction-form" class="form">
+                <label for="avg_session_length">Avg. Session Length</label>
+                <input
+                    id="avg_session_length"
+                    name="avg_session_length"
+                    type="number"
+                    step="0.01"
+                    placeholder="Orn: 33.5"
+                    required
+                />
+
+                <label for="time_on_app">Time on App</label>
+                <input
+                    id="time_on_app"
+                    name="time_on_app"
+                    type="number"
+                    step="0.01"
+                    placeholder="Orn: 12.4"
+                    required
+                />
+
+                <label for="length_of_membership">Length of Membership</label>
+                <input
+                    id="length_of_membership"
+                    name="length_of_membership"
+                    type="number"
+                    step="0.01"
+                    placeholder="Orn: 4.2"
+                    required
+                />
+
+                <button type="submit" id="predict-btn">Tahmini Hesapla</button>
+            </form>
+
+            <div id="result" class="result hidden"></div>
+            <div id="error" class="error hidden"></div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
